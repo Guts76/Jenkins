@@ -22,7 +22,11 @@ Se placer à la racine du projet
     # les dépendances installées avec "pip install"
     python -m venv .venv
 
-    # activation de l'environnement virtuel 
+    # activation de l'environnement virtuel (cas du bash)
+    source ./.venv/Scripts/activate
+
+    # installation des dépendances du projet depuis me fichier requirements.txt
+    pip install -r requirements.txt
 ```
 
 ``` shell
