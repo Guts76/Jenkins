@@ -26,7 +26,7 @@ Se placer à la racine du projet
     source ./.venv/Scripts/activate
 
     # installation des dépendances du projet depuis me fichier requirements.txt
-    pip install -r requirements.txt
+    pip install -r ./requirements.txt
 ```
 
 ``` shell
