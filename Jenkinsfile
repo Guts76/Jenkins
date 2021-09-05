@@ -1,15 +1,30 @@
+/* Ajout de commentaire*/
 pipeline{
-    agent{
-        docker { 
-            image 'python:3.9' }
-        }
+    agent any
     
     stages{
-        stage('build') {
+
+        stage("build") {
+
             steps {
-                sh
+                echo 'building the application...'
             }
             
+        }
+
+        stage("test"){
+
+            steps {
+                echo 'testing the application...'
+            }
+        }
+
+        stage("deploy"){
+
+            steps("deploy"){
+                echo 'deploying the application'
+            }
+
         }
 
     }
